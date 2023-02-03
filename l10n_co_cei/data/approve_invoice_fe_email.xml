@@ -4,7 +4,7 @@
             <field name="name">Aprobación Factura Electrónica</field>
             <field name="use_default_to" eval="False"/>
             <field name="email_to">{{ object.partner_id.fe_correo_electronico }}</field>
-            <field name="subject">{{ object.company_id.partner_id.fe_nit };{{ object.company_id.name }};{{ object.name }};{{ object.category_resolution_dian_id.code }};{{ object.company_id.name }}</field>
+            <field name="subject">{{ object.company_id.partner_id.fe_nit }} {{ object.company_id.name }} {{ object.name }} {{ object.category_resolution_dian_id.code }} {{ object.company_id.name }}</field>
             <field name="model_id" ref="account.model_account_move"/>
             <field name="partner_to" >{{ object.partner_id.id }}</field>
             <field name="report_name">{{ object.filename }}</field>
